@@ -1,0 +1,4 @@
+id,title,price,availability,link
+001,Baumwolltasche Schwarz,29.90 EUR,in_stock,https://example.com/produkte/tasche?farbe=schwarz
+001,Baumwolltasche Braun,34.90 EUR,in_stock,https://example.com/produkte/tasche?farbe=braun
+002,Reisebeutel,12.90 EUR,out_of_stock,https://example.com/produkte/reisebeutel
