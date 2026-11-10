@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merchant feed test fixtures · T&amp;S</title>
+  <meta name="description" content="Synthetic CSV fixtures for testing duplicate IDs and variant mapping in Shopping feeds.">
+  <style>
+    body { margin: 2rem auto; padding: 0 1rem; max-width: 44rem; color: #17254a; font: 1.05rem/1.65 system-ui, sans-serif; }
+    a { color: #1748bd; }
+    code { background: #edf2fb; padding: .1em .25em; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Twist &amp; Schirm</p>
+    <h1>Merchant feed test fixtures</h1>
+    <p>Use this synthetic feed to check whether your import or validation pipeline catches an ID collision between product variants.</p>
+    <p><a href="sample-shopping-feed.csv" download>Download the sample CSV</a></p>
+    <h2>Expected result</h2>
+    <ol>
+      <li>The first two product records share ID <code>001</code> and point to different colour variants.</li>
+      <li>Record three uses ID <code>002</code>. Preserve the leading zeroes when reading both IDs.</li>
+      <li>The prices are denominated in EUR. Keep the currency with the amount when parsing.</li>
+    </ol>
+    <p>The product URLs use example.com. For a real feed, open the precise product variant and compare price, currency, and stock status with your export.</p>
+    <p>Try the fixture in the <a href="https://twistundschirm.com/google-shopping-feed-check/">T&amp;S Shopping Feed Check</a>.</p>
+  </main>
+</body>
+</html>
